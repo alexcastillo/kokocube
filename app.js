@@ -25,8 +25,12 @@ App.config(function($routeProvider) {
       controller: 'shareCtrl',
       css: 'pages/share/share.css'
     })
+    .when('/error', {
+      templateUrl: 'pages/error/error.html',
+      css: 'pages/error/error.css'
+    })
     .otherwise({
-      redirectTo: '/tasks'
+      redirectTo: '/game'
     });
 
 });
