@@ -1,0 +1,6 @@
+{
+  "name": "ss15-castillo",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
