@@ -5,6 +5,11 @@ var App = angular.module('App', ['Koko','ngRoute','door3.css','mgcrea.ngStrap'])
 App.config(function($routeProvider) {
   
   $routeProvider
+    .when('/start', {
+      templateUrl: 'pages/start/start.html',
+      controller: 'startCtrl',
+      css: 'pages/start/start.css'
+    })
     .when('/game', {
       templateUrl: 'pages/game/game.html',
       controller: 'gameCtrl',
