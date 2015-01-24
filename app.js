@@ -1,14 +1,14 @@
 'use strict'
 
-var App = angular.module('App', ['Koko','ngRoute','door3.css']);
+var App = angular.module('App', ['Koko','ngRoute','door3.css','mgcrea.ngStrap']);
 
 App.config(function($routeProvider) {
   
   $routeProvider
-    .when('/tasks', {
-      templateUrl: 'pages/tasks/tasks.html',
-      controller: 'tasksCtrl',
-      css: 'pages/tasks/tasks.css'
+    .when('/game', {
+      templateUrl: 'pages/game/game.html',
+      controller: 'gameCtrl',
+      css: 'pages/game/game.css'
     })
     .when('/results', {
       templateUrl: 'pages/results/results.html',
