@@ -29,5 +29,5 @@ The science of psychology itself allows people to study and comprehend the mind,
 
 ## Development
 
-* [Game Design](../GameDesign.md)
-* [Architecture](../Architecture.md)
+* [Game Design](../master/GameDesign.md)
+* [Architecture](../master/Architecture.md)
