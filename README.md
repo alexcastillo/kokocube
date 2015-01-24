@@ -31,3 +31,16 @@ The science of psychology itself allows people to study and comprehend the mind,
 
 * [Game Design](../master/GameDesign.md)
 * [Architecture](../master/Architecture.md)
+
+## Browser Support
+
+This App requires WebGL.
+
+To enable WebGL on Chrome: 
+ * chrome://settings
+ * Show advanced settings
+ * Enable Hardware acceleration
+ * chrome://settings
+ * Make sure WebGL is enabled
+
+ [More info](http://www.webupd8.org/2014/01/enable-hardware-acceleration-in-chrome.html)
