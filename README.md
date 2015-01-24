@@ -26,3 +26,8 @@ The science of psychology itself allows people to study and comprehend the mind,
 * [A test of creative visualization and selfdiscovery](http://ayresta.tripod.com/cube.htm)
 * [The Cube Game - Find Out The True Nature Of People](http://simonarich.com/the-cube-game)
 * [Desert, Cube, Ladder, Horse, Flowers, Storm by Retronator](http://retronator.deviantart.com/art/Desert-Cube-Ladder-Horse-Flowers-Storm-494350797)
+
+## Development
+
+* [Game Design](../GameDesign.md)
+* [Architecture](../Architecture.md)
