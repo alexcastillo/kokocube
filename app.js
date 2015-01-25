@@ -1,6 +1,6 @@
 'use strict'
 
-var App = angular.module('App', ['Koko','ngRoute','door3.css','mgcrea.ngStrap','ngAnimate','ngMaterial']);
+var App = angular.module('App', ['Koko','ngRoute','ngStorage','ngAnimate','ngMaterial','door3.css','mgcrea.ngStrap']);
 
 App.config(function($routeProvider) {
   
