@@ -10,7 +10,7 @@ App.config(function($routeProvider) {
       controller: 'startCtrl',
       css: 'pages/start/start.css'
     })
-    .when('/game', {
+    .when('/game/:id', {
       templateUrl: 'pages/game/game.html',
       controller: 'gameCtrl',
       css: 'pages/game/game.css'
@@ -35,7 +35,7 @@ App.config(function($routeProvider) {
       css: 'pages/error/error.css'
     })
     .otherwise({
-      redirectTo: '/game'
+      redirectTo: '/start'
     });
 
 });
