@@ -1,4 +1,5 @@
 
 cube {
   display: block;
+  position: fixed;
 }
