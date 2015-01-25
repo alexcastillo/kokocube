@@ -93,6 +93,14 @@ md-content .md-button.md-default-theme {
   padding: 26px;
 }
 
+.md-subheader.md-default-theme.md-warn {
+  background-color: #ef5350;
+  color: #ffffff;
+  margin-right: 0px;
+  font-size: 12px;
+  padding: 16px;
+}
+
 .md-button.md-default-theme.md-fab.md-primary, .md-button.md-default-theme.md-raised.md-primary {
   padding: 14px 40px;
   background-color: rgba(102,187,106,.87);
