@@ -112,7 +112,7 @@ angular.module('Cube', [])
               cube.position.y = 10;
               break;
             case 2: 
-              cube.position.y = 0;
+              cube.position.y = -10;
               break;
           }
         });
