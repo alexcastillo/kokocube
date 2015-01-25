@@ -6,6 +6,5 @@ App.controller('startCtrl', function ($scope, $location, $sessionStorage) {
     $sessionStorage.$reset();
     $location.path('/game/0');
   };
-  
 
 });
