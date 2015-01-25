@@ -79,6 +79,7 @@ md-radio-group {
 
 md-sidenav {
   background-color: #222222;
+  overflow: hidden;
 }
 
 md-content .md-button.md-default-theme {
