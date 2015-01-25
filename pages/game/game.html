@@ -18,7 +18,7 @@
 
   <section>
     <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="true">
-      <md-subheader class="md-warn text-center" ng-if="$storage.question.id >= 7">
+      <md-subheader class="md-warn text-center" ng-show="$storage.question.id >= 7">
         <span class="warning">From this point forward, the desert won't be altered. Now is just you and your imagination. Use the cube as reference for the following questions.</span>
       </md-subheader>
       <md-subheader class="md-primary text-center">
@@ -31,7 +31,6 @@
       </md-subheader>
       <md-content class="md-padding">
         <div class="game-questions" ng-if="activeId != 0">
-          <h2 class="text-center ng-hide">{{ $storage.question.heading }}</h2>
           <p class="text-center">{{ $storage.question.question }}</p>
           <md-radio-group ng-model="$storage.question.answer">
             <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
