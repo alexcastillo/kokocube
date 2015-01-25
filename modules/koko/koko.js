@@ -3,497 +3,524 @@
 var Koko = angular.module('Koko', ['Cube','Ladder','Horse','Flowers','Storm']);
 
 Koko.constant('kokoConst', {
-  answerTypes: {
-    entity: [
-      {
-        label: 'Cube',
-        value: 1
-      },
-      {
-        label: 'Ladder',
-        value: 2
-      },
-      {
-        label: 'Horse',
-        value: 3
-      },
-      {
-        label: 'Flowers',
-        value: 4
-      }
-    ],
-    position: [
-      {
-        label: 'Centered',
-        value: 1
-      },
-      {
-        label: 'To a Side',
-        value: 2
-      },
-      {
-        label: 'Floating',
-        value: 3
-      },
-      {
-        label: 'Grounded',
-        value: 4
-      }
-    ],
-    quantity: [
-      {
-        label: 'One',
-        value: 1
-      },
-      {
-        label: 'Two',
-        value: 2
-      },
-      {
-        label: 'Three',
-        value: 3
-      },
-      {
-        label: 'Four',
-        value: 4
-      },
-      {
-        label: 'Five',
-        value: 5
-      },
-      {
-        label: 'Many',
-        value: 6
-      }
-    ],
-    size: [
-      {
-        label: 'Very Small',
-        value: 1
-      },
-      {
-        label: 'small',
-        value: 2
-      },
-      {
-        label: 'Medium',
-        value: 3
-      },
-      {
-        label: 'Large',
-        value: 4
-      },
-      {
-        label: 'Very large',
-        value: 5
-      }
-    ],
-    color: [
-      {
-        label: 'Transparent',
-        value: 1
-      },
-      {
-        label: 'White',
-        value: 2
-      },
-      {
-        label: 'Gray',
-        value: 3
-      },
-      {
-        label: 'Black',
-        value: 4
-      },
-      {
-        label: 'Red',
-        value: 5
-      },
-      {
-        label: 'Green',
-        value: 6
-      },
-      {
-        label: 'Yellow',
-        value: 7
-      },
-      {
-        label: 'Blue',
-        value: 8
-      },
-      {
-        label: 'Orange',
-        value: 9
-      },
-      {
-        label: 'Different Colors',
-        value: 10
-      }
-    ],
-    material: [
-      {
-        label: 'Wood',
-        value: 1
-      },
-      {
-        label: 'Paper',
-        value: 2
-      },
-      {
-        label: 'Glass',
-        value: 3
-      },
-      {
-        label: 'Metal',
-        value: 4
-      },
-      {
-        label: 'Plastic',
-        value: 5
-      }
-    ],
-    flowerType: [
-      {
-        label: 'Alstroemeria​​',
-        value: 1
-      },
-      {
-        label: '​Amaryllis​​',
-        value: 2
-      },
-      {
-        label: '​Anemone​​',
-        value: 3
-      },
-      {
-        label: '​Anthurium​​',
-        value: 4
-      },
-      {
-        label: '​Aster​​',
-        value: 5
-      },
-      {
-        label: '​Birds of Paradise​​',
-        value: 6
-      },
-      {
-        label: '​Bouvardia​​',
-        value: 7
-      },
-      {
-        label: '​Calla Lily​​',
-        value: 8
-      },
-      {
-        label: '​Carnations​​',
-        value: 9
-      },
-      {
-        label: '​Chrysanthemum​​',
-        value: 10
-      },
-      {
-        label: '​Daffodils​​',
-        value: 11
-      },
-      {
-        label: 'Rose',
-        value: 12
-      },
-      {
-        label: '​Cymbidium Orchid​​',
-        value: 13
-      },
-      {
-        label: '​Daisies​​',
-        value: 14
-      },
-      {
-        label: '​Sweet Pea​​',
-        value: 15
-      },
-      {
-        label: '​Sunflower​​',
-        value: 16
-      },
-      {
-        label: '​Iris​​',
-        value: 17
-      }
-    ],
-    stormType: [
-      {
-        label: 'Thunderstorm',
-        value: 1
-      },
-      {
-        label: 'Lightning',
-        value: 2
-      },
-      {
-        label: 'Tornado',
-        value: 3
-      },
-      {
-        label: 'Hurricane',
-        value: 4
-      }
-    ],
-    stormDirection: [
-      {
-        label: 'towards the cube',
-        value: 1
-      },
-      {
-        label: 'towards the ladder',
-        value: 2
-      },
-      {
-        label: 'towards the horse',
-        value: 3
-      },
-      {
-        label: 'towards the flowers',
-        value: 4
-      },
-      {
-        label: 'away the cube',
-        value: 5
-      },
-      {
-        label: 'away the ladder',
-        value: 6
-      },
-      {
-        label: 'away the horse',
-        value: 7
-      },
-      {
-        label: 'away the flowers',
-        value: 8
-      }
-    ],
-    horseType: [
-      {
-        label: 'With a saddle',
-        value: 1
-      },
-      {
-        label: 'Interested',
-        value: 2
-      },
-      {
-        label: 'Contented',
-        value: 3
-      },
-      {
-        label: 'Submissive',
-        value: 4
-      },
-      {
-        label: 'Aggressive',
-        value: 5
-      },
-      {
-        label: 'Angry',
-        value: 6
-      },
-      {
-        label: 'Excited',
-        value: 7
-      }
-    ],
-    yesOrNo: [
-      {
-        label: 'Yes',
-        value: 1
-      },
-      {
-        label: 'No',
-        value: 2
-      }
-    ],
-    stormFuture: [
-      {
-        label: 'Passing By',
-        value: 1
-      },
-      {
-        label: 'Staying',
-        value: 2
-      }
-    ]
-  },
   questions: [
     {
       id: 1,
       heading: 'The Cube',
-      question: 'What size is it?',
-      description: '',
-      answer: null,
-      answerType: 'size'
+      question: 'Where is it in relation to the horizon?',
+      options: [
+        {
+          label: 'Above the horizon',
+          value: 1
+        },
+        {
+          label: 'Below the horizon',
+          value: 2
+        },
+        {
+          label: 'Bisecting the horizon',
+          value: 3
+        }
+      ]
     },
     {
       id: 2,
       heading: 'The Cube',
-      question: 'What color is it?',
-      description: '',
-      answer: null,
-      answerType: 'color'
+      question: 'Is it close or distant?',
+      options: [
+        {
+          label: 'Close',
+          value: 1
+        },
+        {
+          label: 'Distant',
+          value: 2
+        }
+      ]
     },
     {
       id: 3,
       heading: 'The Cube',
-      question: 'What is this cube made of?',
-      description: '',
-      answer: null,
-      answerType: 'material'
+      question: 'How heavy is the cube?',
+      options: [
+        {
+          label: 'Floating',
+          value: 1
+        },
+        {
+          label: 'Grounded',
+          value: 2
+        }
+      ]
     },
     {
       id: 4,
       heading: 'The Cube',
-      question: 'Where is the cube in this desert?',
-      description: '',
-      answer: null,
-      answerType: 'position'
+      question: 'Can you see different sides?',
+      options: [
+        {
+          label: 'Flat',
+          value: 1
+        },
+        {
+          label: '3D',
+          value: 2
+        }
+      ]
     },
     {
       id: 5,
-      heading: 'The Ladder',
-      question: 'How many rungs?',
-      description: '',
-      answer: null,
-      answerType: 'quantity'
+      heading: 'The Cube',
+      question: 'How is this cube positioned?',
+      options: [
+        {
+          label: 'Centered',
+          value: 1
+        },
+        {
+          label: 'To a side',
+          value: 2
+        }
+      ]
     },
     {
       id: 6,
-      heading: 'The Ladder',
-      question: 'What size is your ladder?',
-      description: '',
-      answer: null,
-      answerType: 'size'
+      heading: 'The Cube',
+      question: 'What\'s its material or color?',
+      options: [
+        {
+          label: 'Transparent',
+          value: 1
+        },
+        {
+          label: 'Ice Melting',
+          value: 2
+        },
+        {
+          label: 'Ploshed Stone',
+          value: 3
+        },
+        {
+          label: 'Rounded Stone',
+          value: 4
+        },
+        {
+          label: 'Black',
+          value: 5
+        },
+        {
+          label: 'White',
+          value: 6
+        },
+        {
+          label: 'Yellow',
+          value: 7
+        },
+        {
+          label: 'Red',
+          value: 8
+        },
+        {
+          label: 'Green',
+          value: 9
+        },
+        {
+          label: 'Purple',
+          value: 10
+        },
+        {
+          label: 'Brown',
+          value: 11
+        }
+      ]
     },
     {
       id: 7,
       heading: 'The Ladder',
-      question: 'What is your ladder made of?',
-      description: '',
-      answer: null,
-      answerType: 'material'
+      question: 'How many rungs does it have?',
+      options: [
+        {
+          label: 'Not many',
+          value: 1
+        },
+        {
+          label: 'Few',
+          value: 2
+        },
+        {
+          label: 'Many',
+          value: 3
+        }
+      ]
     },
     {
       id: 8,
       heading: 'The Ladder',
-      question: 'Where is the ladder in relation to the cube? What is the ladder\'s position?',
-      description: '',
-      answer: null,
-      answerType: 'position'
+      question: 'Is it distant or close to the cube?',
+      options: [
+        {
+          label: 'Close',
+          value: 1
+        },
+        {
+          label: 'Distant',
+          value: 2
+        }
+      ]
     },
     {
       id: 9,
-      heading: 'The Horse',
-      question: 'Describe this horse. What color is the horse?',
-      description: '',
-      answer: null,
-      answerType: 'color'
+      heading: 'The Ladder',
+      question: 'How is this ladder standing?',
+      options: [
+        {
+          label: 'Free Standing',
+          value: 1
+        },
+        {
+          label: 'Lying Down',
+          value: 2
+        },
+        {
+          label: 'Floating',
+          value: 3
+        }
+      ]
     },
     {
       id: 10,
-      heading: 'The Horse',
-      question: 'What size is the horse?',
-      description: '',
-      answer: null,
-      answerType: 'size'
+      heading: 'The Ladder',
+      question: 'What\'s the relation between the ladder, the desert and the cube?',
+      options: [
+        {
+          label: 'Against the cube',
+          value: 1
+        },
+        {
+          label: 'Connecting the cube to the ground',
+          value: 2
+        },
+        {
+          label: 'Connecting to a side of the cube',
+          value: 3
+        },
+        {
+          label: 'Connecting the cube to the sky',
+          value: 4
+        },
+        {
+          label: 'Descending into the ground',
+          value: 5
+        }
+      ]
     },
     {
       id: 11,
-      heading: 'The Horse',
-      question: 'Where is the horse relative to the cube and ladder?',
-      description: '',
-      answer: null,
-      answerType: 'position'
+      heading: 'The Ladder',
+      question: 'What\'s it made of?',
+      options: [
+        {
+          label: 'Iron',
+          value: 1
+        },
+        {
+          label: 'Rope',
+          value: 2
+        },
+        {
+          label: 'Old wood',
+          value: 3
+        },
+        {
+          label: 'New wood',
+          value: 4
+        },
+        {
+          label: 'Steel',
+          value: 5
+        }
+      ]
     },
     {
       id: 12,
-      heading: 'The Horse',
-      question: 'What impression does it give you? Is it tied? Is there a saddle?',
-      description: '',
-      answer: null,
-      answerType: 'horseType'
+      heading: 'The Ladder',
+      question: 'What\'s its material or color?',
+      options: [
+        {
+          label: 'Transparent',
+          value: 1
+        },
+        {
+          label: 'Ice Melting',
+          value: 2
+        },
+        {
+          label: 'Ploshed Stone',
+          value: 3
+        },
+        {
+          label: 'Rounded Stone',
+          value: 4
+        },
+        {
+          label: 'Black',
+          value: 5
+        },
+        {
+          label: 'White',
+          value: 6
+        },
+        {
+          label: 'Yellow',
+          value: 7
+        },
+        {
+          label: 'Red',
+          value: 8
+        },
+        {
+          label: 'Green',
+          value: 9
+        },
+        {
+          label: 'Purple',
+          value: 10
+        },
+        {
+          label: 'Brown',
+          value: 11
+        }
+      ]
     },
     {
       id: 13,
       heading: 'The Horse',
-      question: 'Where is the ladder in relation to the cube? What is the ladder\'s position?',
-      description: '',
-      answer: null,
-      answerType: 'position'
+      question: 'What\'s the horse\'s color?',
+      options: [
+        {
+          label: 'White',
+          value: 1
+        },
+        {
+          label: 'Black',
+          value: 2
+        },
+        {
+          label: 'Brown',
+          value: 3
+        }
+      ]
     },
     {
       id: 14,
-      heading: 'The Flowers',
-      question: 'In this landscape we have flowers. How many flowers are there?',
-      description: '',
-      answer: null,
-      answerType: 'quantity'
+      heading: 'The Horse',
+      question: 'What type of horse is this?',
+      options: [
+        {
+          label: 'Arabian',
+          value: 1
+        },
+        {
+          label: 'Clydesdale/Carthorse',
+          value: 2
+        },
+        {
+          label: 'Palomino',
+          value: 3
+        },
+        {
+          label: 'Mare',
+          value: 4
+        },
+        {
+          label: 'Pony',
+          value: 5
+        },
+        {
+          label: 'Stallion',
+          value: 6
+        },
+        {
+          label: 'Unicorn',
+          value: 7
+        }
+      ]
     },
     {
       id: 15,
-      heading: 'The Flowers',
-      question: 'What kind?',
-      description: '',
-      answer: null,
-      answerType: 'flowerType'
+      heading: 'The Horse',
+      question: 'What\'s the relation between the horse and the cube?',
+      options: [
+        {
+          label: 'Close',
+          value: 1
+        },
+        {
+          label: 'Distant',
+          value: 2
+        }
+      ]
     },
     {
       id: 16,
-      heading: 'The Flowers',
-      question: 'What color are they?',
-      description: '',
-      answer: null,
-      answerType: 'color'
+      heading: 'The Horse',
+      question: 'What is the horse doing?',
+      options: [
+        {
+          label: 'Flying',
+          value: 1
+        },
+        {
+          label: 'Wild',
+          value: 2
+        },
+        {
+          label: 'Tied',
+          value: 3
+        },
+        {
+          label: 'Running',
+          value: 4
+        },
+        {
+          label: 'Still',
+          value: 5
+        }
+      ]
     },
     {
       id: 17,
       heading: 'The Flowers',
-      question: 'Where are the flowers in relation to the cube, the ladder, and the horse?',
-      description: '',
-      answer: null,
-      answerType: 'position'
+      question: 'What\'s the relation between the flowers and the cube?',
+      options: [
+        {
+          label: 'Inside the cube',
+          value: 1
+        },
+        {
+          label: 'Behind the cube',
+          value: 2
+        },
+        {
+          label: 'Far',
+          value: 3
+        },
+        {
+          label: 'In the foreground',
+          value: 4
+        },
+        {
+          label: 'Wild growing',
+          value: 5
+        }
+      ]
     },
     {
       id: 18,
-      heading: 'The Storm',
-      question: 'Somewhere in this landscape we have a storm. Describe this storm. What kind of a storm is it?',
-      description: '',
-      answer: null,
-      answerType: 'stormType'
+      heading: 'The Flowers',
+      question: 'How many flowers can you see?',
+      options: [
+        {
+          label: 'One',
+          value: 1
+        },
+        {
+          label: 'Few',
+          value: 2
+        },
+        {
+          label: 'Many',
+          value: 3
+        }
+      ]
     },
     {
       id: 19,
-      heading: 'The Storm',
-      question: 'What direction is it headed?',
-      description: '',
-      answer: null,
-      answerType: 'stormDirection'
+      heading: 'The Flowers',
+      question: 'Where are these flowers or where are they coming from?',
+      options: [
+        {
+          label: 'In a garden',
+          value: 1
+        },
+        {
+          label: 'Falling from the sky',
+          value: 2
+        },
+        {
+          label: 'In a vase',
+          value: 3
+        }
+      ]
     },
     {
       id: 20,
       heading: 'The Storm',
-      question: 'How does this storm affect-or not affect the cube, the ladder, the horse and flowers?',
-      description: '',
-      answer: null,
-      answerType: 'entity',
-      multipleSelection: true
+      question: 'What type of storm do you see?',
+      options: [
+        {
+          label: 'Rain',
+          value: 1
+        },
+        {
+          label: 'Electrical',
+          value: 2
+        },
+        {
+          label: 'Tornado',
+          value: 3
+        },
+        {
+          label: 'Wind',
+          value: 4
+        },
+        {
+          label: 'Sandstorm',
+          value: 5
+        },
+        {
+          label: 'Rainstorm',
+          value: 6
+        }
+      ]
     },
     {
       id: 21,
       heading: 'The Storm',
-      question: 'Is it passing by or staying?',
-      description: '',
-      answer: null,
-      answerType: 'stormFuture'
+      question: 'What\'s the relation between the storm and the cube?',
+      options: [
+        {
+          label: 'Above the cube',
+          value: 1
+        },
+        {
+          label: 'Behind the cube',
+          value: 2
+        },
+        {
+          label: 'Far',
+          value: 3
+        },
+        {
+          label: 'Near',
+          value: 4
+        }
+      ]
+    },
+    {
+      id: 22,
+      heading: 'The Storm',
+      question: 'How big is the storm?',
+      options: [
+        {
+          label: 'Big',
+          value: 1
+        },
+        {
+          label: 'Small',
+          value: 2
+        }
+      ]
     }
   ]
 });

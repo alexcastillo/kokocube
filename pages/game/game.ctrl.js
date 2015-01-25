@@ -6,10 +6,6 @@ App.controller('gameCtrl', function ($scope, $rootScope, $location, $routeParams
     questions: kokoConst.questions
   });
 
-  angular.forEach($scope.$storage.questions, function (question) {
-    question.options = angular.copy(kokoConst.answerTypes[question.answerType]);
-  });
-
   $scope.activeId = parseInt($routeParams.id);
 
   $scope.$storage.question = $scope.$storage.questions[$routeParams.id-1]
