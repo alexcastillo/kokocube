@@ -94,9 +94,9 @@ angular.module('Cube', [])
         scope.$watch('scale', function (scale) {
           switch (scale) {
             case 1: 
-              cube.scale.x = 1;
-              cube.scale.y = 1;
-              cube.scale.z = 1;
+              cube.scale.x = 1.5;
+              cube.scale.y = 1.5;
+              cube.scale.z = 1.5;
               break;
             case 2: 
               cube.scale.x = 0.5;
