@@ -11,7 +11,7 @@ body, html {
 
 body { 
   margin: 0;
-  background-color: #ABAE9B;
+  background-color: #222222;
 }
 
 canvas { 
@@ -19,22 +19,13 @@ canvas {
   height: 100%;
 }
 
-md-toolbar.md-default-theme {
-  background-color: #000000;
-  color: #fff;
-}
-
-md-radio-group {
-  border: none;
-}
-
-md-sidenav {
-  background-color: rgba(255,255,255,0.6);
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.container-md {
+  max-width: 660px;
 }
 
 .container-content {
@@ -50,4 +41,24 @@ hr {
 
 .text-center {
   text-align: center;
+}
+
+/* Material Design overrides */
+
+md-toolbar.md-default-theme {
+  background-color: #000000;
+  color: #fff;
+}
+
+md-radio-group {
+  border: none;
+}
+
+md-sidenav {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.md-button.md-default-theme.md-fab.md-primary, .md-button.md-default-theme.md-raised.md-primary {
+  padding: 14px 40px;
+  background-color: rgba(102,187,106,.87);
 }
