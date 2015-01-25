@@ -16,6 +16,11 @@ body, html {
 
 .game-nav {
   margin-top: 40px;
-  padding-top: 12px;
+  padding: 20px 20px 10px 20px;
   border-top: 1px solid rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.game-nav .md-button.md-default-theme {
+  width: 44%;
 }

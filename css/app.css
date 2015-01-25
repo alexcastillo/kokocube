@@ -43,11 +43,24 @@ hr {
   text-align: center;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
 /* Material Design overrides */
+
+md-content.md-default-theme {
+  background-color: #222222;
+  color: #ffffff;
+}
 
 md-toolbar.md-default-theme {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
 }
 
 md-radio-group {
@@ -56,6 +69,18 @@ md-radio-group {
 
 md-sidenav {
   background-color: rgba(255,255,255,0.6);
+}
+
+md-content .md-button.md-default-theme {
+  background-color: #ffffff;
+}
+
+.md-subheader.md-default-theme.md-primary {
+  background-color: #444444;
+  color: #ffffff;
+  margin-right: 0px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .md-button.md-default-theme.md-fab.md-primary, .md-button.md-default-theme.md-raised.md-primary {
