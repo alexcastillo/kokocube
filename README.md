@@ -4,11 +4,11 @@
 
 ## Concept
 
-**KokoCube** - *A Kokology game based on the "The Desert, cube, ladder, horse, flowers and storm"*
+**KokoCube** is a Kokology game based on the psychology test: *"The Desert, cube, ladder, horse, flowers and storm"*.
 
 ### What is Kokology?
 
-A series o psychological games designed to uncover emotional and behavioral traits of the players.
+Kokology is a series o psychological games designed to uncover emotional and behavioral traits of the players.
 
 The purpose of kokology games is to help gaze into inside world of human psychology, to discover yet unknown depths of ones emotions and feeling laying deep within.
 Many forms of media such as books, newspapers, television has helped people to understand the outside world. Kokology games are dedicated to help understand our forgotten inside world.
