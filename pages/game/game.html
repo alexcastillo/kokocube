@@ -1,5 +1,5 @@
 
-<div id="canvas" hide-sm>
+<div id="canvas" hide-sm ng-if="activeId != 0">
   <cube 
     position-y="$storage.questions[0].answer" 
     scale="$storage.questions[1].answer" 
@@ -19,22 +19,24 @@
   <section>
     <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="true">
       <md-subheader class="md-primary text-center">
-        <span ng-if="$storage.question.id == 1">Imagine a <strong>desert</strong>. It has a horizon line, sand and a sky.</span>
-        <span ng-if="$storage.question.id > 1 && $storage.question.id < 7">Somewhere in this desert there is a <strong>cube</strong>.</span>
+        <span ng-if="!$storage.question.id">Imagine a <strong>desert</strong>. It has a horizon line, sand and a sky.</span>
+        <span ng-if="$storage.question.id >= 1 && $storage.question.id < 7">Somewhere in this desert there is a <strong>cube</strong>.</span>
         <span ng-if="$storage.question.id >= 7 && $storage.question.id < 13">Now, somewhere in the desert there's also a <strong>ladder</strong>.</span>
         <span ng-if="$storage.question.id >= 13 && $storage.question.id < 17">Somewhere in the desert you can also see a <strong>horse</strong>.</span>
         <span ng-if="$storage.question.id >= 17 && $storage.question.id < 20">Now, somewhere in the desert there are also <strong>flowers</strong>.</span>
         <span ng-if="$storage.question.id >= 20">Finally, somwehere in the desert there is a <strong>storm</strong>.</span>
       </md-subheader>
       <md-content class="md-padding">
-        <h2 class="text-center ng-hide">{{ $storage.question.heading }}</h2>
-        <p class="text-center">{{ $storage.question.question }}</p>
-        <br>
-        <md-radio-group ng-model="$storage.question.answer">
-          <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
-        </md-radio-group>
+        <div class="game-questions" ng-if="activeId != 0">
+          <h2 class="text-center ng-hide">{{ $storage.question.heading }}</h2>
+          <p class="text-center">{{ $storage.question.question }}</p>
+          <br>
+          <md-radio-group ng-model="$storage.question.answer">
+            <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
+          </md-radio-group>
+        </div>
         <nav class="game-nav">
-          <md-button class="pull-left" ng-click="prevQuestion()" ng-hide="activeId == 1">Previous</md-button>
+          <md-button class="pull-left" ng-click="prevQuestion()" ng-hide="activeId <= 1">Previous</md-button>
           <md-button class="pull-right" ng-click="nextQuestion()" ng-hide="activeId == $storage.questions.length">Next</md-button>
           <md-button class="md-warn pull-right" ng-click="goToResults()" ng-show="activeId == $storage.questions.length">Complete</md-button>
         </nav>
