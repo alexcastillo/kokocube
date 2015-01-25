@@ -88,6 +88,11 @@ md-content .md-button.md-default-theme {
   background-color: rgba(102,187,106,.87);
 }
 
+.md-button.md-default-theme.md-primary {
+  background-color: rgb(63,81,181);
+  color: white;
+}
+
 .md-button.md-default-theme.md-warn {
   background-color: #ef5350;
   color: white;
