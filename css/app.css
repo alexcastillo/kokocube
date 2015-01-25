@@ -116,3 +116,7 @@ md-content .md-button.md-default-theme {
   background-color: #ef5350;
   color: white;
 }
+
+.md-button.md-default-theme.md-fab[disabled], .md-button.md-default-theme.md-raised[disabled], .md-button.md-default-theme[disabled] {
+  background-color: #ffffff;
+}

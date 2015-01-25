@@ -38,8 +38,8 @@
         </div>
         <nav class="game-nav">
           <md-button class="pull-left" ng-click="prevQuestion()" ng-hide="activeId <= 1">Previous</md-button>
-          <md-button class="pull-right" ng-click="nextQuestion()" ng-hide="activeId == $storage.questions.length">Next</md-button>
-          <md-button class="md-warn pull-right" ng-click="goToResults()" ng-show="activeId == $storage.questions.length">Complete</md-button>
+          <md-button class="pull-right" ng-click="nextQuestion()" ng-hide="activeId == $storage.questions.length" ng-disabled="!$storage.question.answer && activeId != 0">Next</md-button>
+          <md-button class="md-warn pull-right" ng-click="goToResults()" ng-show="activeId == $storage.questions.length" ng-disabled="!$storage.question.answer">Complete</md-button>
         </nav>
       </md-card-content>
     </md-sidenav>
