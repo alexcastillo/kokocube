@@ -1,35 +1,31 @@
 
-<section layout="row" flex>
+<div layout="row" layout-sm="column" layout-fill layout-margin>
 
-  <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="true">
-    <md-content class="md-padding">
-      <md-card>
-       <md-card-content>
-          <h2>{{ $storage.question.heading }}</h2>
-          <p>{{ $storage.question.question }}</p>
-          <md-radio-group ng-model="$storage.question.answer">
-            <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
-          </md-radio-group>
-          <nav>
-            <md-button class="" ng-click="prevQuestion()" ng-disabled="activeId == 1">Previous</md-button>
-            <md-button class="" ng-click="nextQuestion()" ng-hide="activeId == questions.length">Next</md-button>
-            <md-button class="md-primary" ng-click="goToResults()" ng-show="activeId == questions.length">Complete</md-button>
-          </nav>
-        </md-card-content>
-      </md-card>
-    </md-content>
-  </md-sidenav>
+  <section flex>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="true">
+      <md-content class="md-padding">
+        <h2>{{ $storage.question.heading }}</h2>
+        <p>{{ $storage.question.question }}</p>
+        <md-radio-group ng-model="$storage.question.answer">
+          <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
+        </md-radio-group>
+        <nav>
+          <md-button class="" ng-click="prevQuestion()" ng-disabled="activeId == 1">Previous</md-button>
+          <md-button class="" ng-click="nextQuestion()" ng-hide="activeId == $storage.questions.length">Next</md-button>
+          <md-button class="md-primary" ng-click="goToResults()" ng-show="activeId == $storage.questions.length">Complete</md-button>
+        </nav>
+      </md-card-content>
+    </md-sidenav>
+  </section>
 
-  <div layout="row">
-    <cube></cube>
-    <ladder></ladder>
-    <horse></horse>
-    <flowers></flowers>
-    <storm></storm>
-  </div>
+  <section flex>
+    <div>
+      <cube></cube>
+      <ladder></ladder>
+      <horse></horse>
+      <flowers></flowers>
+      <storm></storm>
+    </div>
+  </section>
 
-  <pre class="ng-hide">{{ $storage.questions | json }}</pre>
-
-  <footer></footer>
-
-</section>
+</md-content>
