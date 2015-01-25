@@ -1,3 +1,15 @@
+body { 
+  margin: 0; 
+  background-image: url('/img/desert/desert5.jpg');
+  background-position: center bottom;
+  background-size: cover;
+}
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
 .game-nav {
   margin-top: 40px;
   padding-top: 12px;

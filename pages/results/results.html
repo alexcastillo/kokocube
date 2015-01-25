@@ -1,362 +1,370 @@
-<h3>You have created a mysterious image. Five elements, arranged in space in a way that is unique to you. No one else sees what you do. Close your eyes and look at it once more. Now open your eyes and read below to find the secrets of what you created. </h3>
-
-<article>
-
-  <h2>The Cube</h2>
-
-  <p>
-
-    The first object in the desert, the cube, represents you. How you think about the cube represents how you think about yourself. According to your image and the position of the cube, you are
-
-    <!-- RELATION TO HORIZON - Where is it in relation to the horizon? -->
-    <span>
-      <!-- Cube is above horizon -->
-      <span ng-if="$storage.results[1] == 1">idealistic, intellectual, spiritual and a dreamer.</span>
-      <!-- Cube is below horizon -->
-      <span ng-if="$storage.results[1] == 2">practical, worldly, down-to-earth and sensual.</span>
-      <!-- Cube is bisecting horizon -->
-      <span ng-if="$storage.results[1] == 3">a visionary and practical, spiritual and sensual and making ideas/ideals practical.</span>
-    </span>
-
-    Based on the proximity of the cube, you are
-
-    <!-- PROXIMITY - Is it close or distant? -->
-    <span>
-      <!-- Cube is close -->
-      <span ng-if="$storage.results[2] == 1">comfortable with closeness, a people person and living in the present.</span>
-      <!-- Cube is distant -->
-      <span ng-if="$storage.results[2] == 2">protective of your space and independent.</span>
-    </span>
-
-    <!-- WEIGHT - How heavy is the cube? -->
-    <span>
-      <!-- Cube is floating -->
-      <span ng-if="$storage.results[3] == 1">A floating cube shows that you are a dreamer, optimistic, idealistic, spiritual and living in ideas of fantasy impractical above it all.</span>
-      <!-- Cube is grounded -->
-      <span ng-if="$storage.results[3] == 2">A grounded cube means that you are down to earth.</span>
-    </span>
-
-    <!-- DEPTH - Can you see different sides? -->
-    <span>
-      <!-- Cube is flat -->
-      <span ng-if="$storage.results[4] == 1">If you see the flat side of the cube, you have a shallow personality</span>
-      <!-- Cube is 3D -->
-      <span ng-if="$storage.results[4] == 1">If you see the cube in 3D, you have a deep personality.</span>
-    </span>
-
-    <!-- POSITION - How is this cube positioned? -->
-    <span>
-      <!-- Cube is in the center -->
-      <span ng-if="$storage.results[5] == 1">If the cube is in the center it means that you like the attention and you like to be praised.</span>
-    </span>
-
-    Lastly, the material or color of the cube represents your personality. In general, if the cube is light you are a positive person and the darker it is the more negative you are. However it may not always be so, you should always pay attention to how you feel about the color. If you like the color then you are a likable personality, it the color seems cold to you, you seem distant to people.
-
-    <!-- MATERIAL OR COLOR - What's its material or color? -->
-    <span>
-      <!-- Cube is transparent -->
-      <span ng-if="$storage.results[6] == 1">A <strong>transparent</strong> cube means your are open to others, you don’t hide anything from your friends or family.</span>
-      <!-- Cube is ice melting -->
-      <span ng-if="$storage.results[6] == 2">An <strong>ice melting</strong> cube means your are vulnerable, calm, refreshing, in love.</span>
-      <!-- Cube is polished stone -->
-      <span ng-if="$storage.results[6] == 3">A <strong>stone</strong> cube means your are smooth, refined, ambitious.</span>
-      <!-- Cube is round stone  -->
-      <span ng-if="$storage.results[6] == 4">A <strong>stone</strong> cube means your are natural, honest, awkward, unpolished.</span>
-      <!-- Cube is black -->
-      <span ng-if="$storage.results[6] == 5">A <strong>black</strong> cube represents authority, elegance, sophistication. It can also mean the dark side of the personality.</span>
-      <!-- Cube is white -->
-      <span ng-if="$storage.results[6] == 6">A <strong>white</strong> cube symbolizes innocence, non-judgemental personality, objectivity, lack of strong opinions.</span>
-      <!-- Cube is yellow -->
-      <span ng-if="$storage.results[6] == 7">A <strong>yellow</strong> cube shows that the person loves attention and would do almost anything to get the attention. If this is your color, you may seem too overbearing to some people so they may avoid you. This color also represents playfulness, optimism and energy.</span>
-      <!-- Cube is red -->
-      <span ng-if="$storage.results[6] == 8">A <strong>red</strong> cube represents dominance, power, love and sexual energy. It can also mean that you are an attention seeker.</span>
-      <!-- Cube is green -->
-      <span ng-if="$storage.results[6] == 9">A <strong>green</strong> cube represents compassion, prosperity, money, and vitality.</span>
-      <!-- Cube is blue -->
-      <span ng-if="$storage.results[6] == 10">A <strong>blue</strong> cube represents knowledge, loyalty and calmness.</span>
-      <!-- Cube is purple -->
-      <span ng-if="$storage.results[6] == 11">A <strong>purple</strong> cube represents luxury, wealth, and sophistication.</span>
-      <!-- Cube is brown -->
-      <span ng-if="$storage.results[6] == 12">A <strong>brown</strong> cubeshows stability. Brown is the most common cube color among men.</span>
-    </span>
-
-  </p>
-
-</article>
-
-<article>
-
-  <h2>The Ladder</h2>
-
-  <p>
-
-    The ladder represents your friends it seems you
-
-    <!-- Rungs amount - How many rungs does it have? -->
-    <span>
-      <!-- Ladder not many rungs -->
-      <span ng-if="$storage.results[7] == 1">don't have many but the ones you have, are very important.</span>
-      <!-- Ladder few -->
-      <span ng-if="$storage.results[7] == 2">have a good amount of them.</span>
-      <!-- Ladder many rungs -->
-      <span ng-if="$storage.results[7] == 3">have many of them.</span>
-    </span>
-
-    The closer the ladder to the cube, the closer you are with your friends. 
-
-    <!-- DISTANCE FROM THE CUBE - Is it distant or close to the cube? -->
-    <span>
-      <!-- Ladder is far from the cube -->
-      <span ng-if="$storage.results[8] == 2">Your friends are not very close right now. They live far from you or are not important to you. You either mentally or physically like to distance yourself from your friends.</span>
-    </span>
-
-    Based on the way the way the ladder stands, your friends are
-
-    <!-- STANDING - How is this ladder standing? -->
-    <span>
-      <!-- Ladder is free standing -->
-      <span ng-if="$storage.results[9] == 1">independent, don't lean on you and are 'upstanding' to have your respect.</span>
-      <!-- Ladder is lying down -->
-      <span ng-if="$storage.results[9] == 2">relaxed, casual, tired, not much use and downand out.</span>
-      <!-- Ladder is floating -->
-      <span ng-if="$storage.results[9] == 3">dreamers, drifters, philosophers, artists andnot very practical.</span>
-    </span>
-
-    <!-- Relationship with cube - What's the relation between the ladder, the desert and the cube? -->
-    <span>
-      <!-- Ladder is leanning against the cube -->
-      <span ng-if="$storage.results[10] == 1">Some friends are relying on you or expecting you to act according to their wishes.</span>
-      <!-- Ladder is connecting cube to ground -->
-      <span ng-if="$storage.results[10] == 2">They can bring you down to earth, ground you inreality.</span>
-      <!-- Ladder is connecting cube to side -->
-      <span ng-if="$storage.results[10] == 3">You consider your siblings to be your friends. </span>
-      <!-- Ladder is connecting cube to sky -->
-      <span ng-if="$storage.results[10] == 4">They are spiritually evolved and may include God/higher power. They also can help you rise.</span>
-      <!-- Ladder is descending in to the ground -->
-      <span ng-if="$storage.results[10] == 5">They help your self understanding, go deeply into your life and might be undermining you.</span>
-    </span>
-
-    Additionally, your friends are
-
-    <!-- MATERIAL - What's it made of? -->
-    <span>
-      <!-- Ladder is iron  -->
-      <span ng-if="$storage.results[11] == 1">"heavyweights", blunt, uneducated or seriousor somber.</span>
-      <!-- Ladder is rope -->
-      <span ng-if="$storage.results[11] == 2">flexible, have a strong bond with you, reach out to you.</span>
-      <!-- Ladder is old wood -->
-      <span ng-if="$storage.results[11] == 3">old friends, familiar, comfortable and/or older than you.</span>
-      <!-- Ladder is new -->
-      <span ng-if="$storage.results[11] == 4">fairly new and probably cultured, educated, wealthy and/or snobbish.</span>
-      <!-- Ladder is steel -->
-      <span ng-if="$storage.results[11] == 5">reliable, indestructible, practical and/or unadorned.</span>
-    </span>
-
-    And most importantly, some of your friends
-
-    <!-- MATERIAL OR COLOR - What's its material or color? -->
-    <span>
-      <!-- Ladder is transparent -->
-      <span ng-if="$storage.results[12] == 1">are open and honest with you, they don’t hide anything from your you or their family.</span>
-      <!-- Ladder is ice melting -->
-      <span ng-if="$storage.results[12] == 2">are vulnerable, calm, refreshing, in love.</span>
-      <!-- Ladder is polished stone -->
-      <span ng-if="$storage.results[12] == 3">are smooth, refined, ambitious.</span>
-      <!-- Ladder is round stone  -->
-      <span ng-if="$storage.results[12] == 4">are natural, honest, awkward, unpolished.</span>
-      <!-- Ladder is black -->
-      <span ng-if="$storage.results[12] == 5">represent authority, elegance, sophistication. It can also mean the dark side of the personality.</span>
-      <!-- Ladder is white -->
-      <span ng-if="$storage.results[12] == 6">symbolize innocence, non-judgemental personality, objectivity, lack of strong opinions.</span>
-      <!-- Ladder is yellow -->
-      <span ng-if="$storage.results[12] == 7">love attention and would do almost anything to get the attention. They may seem too overbearing to some people so they may avoid you. They also represent playfulness, optimism and energy.</span>
-      <!-- Ladder is red -->
-      <span ng-if="$storage.results[12] == 8">represent dominance, power, love and sexual energy. It can also mean that they are an attention seeker.</span>
-      <!-- Ladder is green -->
-      <span ng-if="$storage.results[12] == 9">represent compassion, prosperity, money, and vitality.</span>
-      <!-- Ladder is blue -->
-      <span ng-if="$storage.results[12] == 10">represent knowledge, loyalty and calmness.</span>
-      <!-- Ladder is purple -->
-      <span ng-if="$storage.results[12] == 11">represent luxury, wealth, and sophistication.</span>
-      <!-- Ladder is brown -->
-      <span ng-if="$storage.results[12] == 12">are very satable.</span>
-    </span>
-
-    Nice ladder!
-
-  </p>
-
-</article>
-
-
-<article>
-
-  <h2>The Horse</h2>
-
-  <p>
-
-    The horse represents your ideal partner and how you behave in relationships. The distance between the cube and the horse shows how close or distant you are in relationships. How the horse behaves also shows what kind of partner you would like to have. The look of a horse also indicate the physical features of your ideal partner. The better the appearance of the horse, the better looking partner you would like to have.
-
-    At times, your ideal partner could be
-
-    <!-- COLOR - What's the horse's color? -->
-    <span>
-      <!-- Horse is White -->
-      <span ng-if="$storage.results[13] == 1">idealized, idealistic, your dream, of high principles, good</span>
-      <!-- Horse is Black -->
-      <span ng-if="$storage.results[13] == 2">mysterious, romantic, powerful, moody, a good lover</span>
-      <!-- Horse is Brown -->
-      <span ng-if="$storage.results[13] == 3">warm, earthy, sensual, unpretentious</span>
-    </span>
-
-    but they could also be
-
-    <!-- TYPE - What type of horse is this? -->
-    <span>
-      <!-- Horse is Arabian -->
-      <span ng-if="$storage.results[14] == 1">high-strung, aristocrat, elegant, nervous and proud.</span>
-      <!-- Horse is Clydesdale/Carthorse -->
-      <span ng-if="$storage.results[14] == 2">a real workhorse, big, heavy and physically strong.</span>
-      <!-- Horse is Palomino -->
-      <span ng-if="$storage.results[14] == 3">your pal, good as gold, blond.</span>
-      <!-- Horse is Mare -->
-      <span ng-if="$storage.results[14] == 4">nurturing, gentle, patient, enduring and temperamental.</span>
-      <!-- Horse is a Pony -->
-      <span ng-if="$storage.results[14] == 5">small, cute, probably child-like, and affectionate.</span>
-      <!-- Horse is Stallion-->
-      <span ng-if="$storage.results[14] == 6">old, assertive, adventurous, dominant and proud.</span>
-      <!-- Horse is Unicorn -->
-      <span ng-if="$storage.results[14] == 7">enchanting, shy, pure, innocent and magical.</span>
-    </span>
-    
-    They're also
-
-    <!-- RALATIONSHIP WITH THE CUBE - What's the relation between the horse and the cube? -->
-    <span>
-      <!-- Horse is close -->
-      <span ng-if="$storage.results[15] == 1">definitely close to you, loyal, committed.</span>
-      <!-- Horse is distant -->
-      <span ng-if="$storage.results[15] == 2">indifferent, very independent, with a low priority for you.</span>
-    </span>
-
-    Finally, 
-
-    <!-- ACTION - What is the horse doing? -->
-    <span>
-      <!-- Horse is flying -->
-      <span ng-if="$storage.results[16] == 1">your partner feels like a new love, idealized, spiritual, magical, taking you higher, taking you away.</span>
-      <!-- Horse is wild -->
-      <span ng-if="$storage.results[16] == 2">you give freedom to your partnery.</span>
-      <!-- Horse is tied -->
-      <span ng-if="$storage.results[16] == 3">you always want to know where your partner is and what he/she is doing.</span>
-      <!-- Horse is running -->
-      <span ng-if="$storage.results[16] == 4">you want to have a partner that would like to travel, would be full of energy and would always be involved in something.</span>
-      <!-- Horse is still -->
-      <span ng-if="$storage.results[16] == 5">you want to have a partner that likes to be at home and rarely travels.</span>
-    </span>
-
-  </p>
-
-</article>
-
-<article>
-
-  <h2>The Flowers</h2>
-
-  <p>
-
-    The flowers represents your children. In your case they are
-
-    <!-- RELATIONSHIP WITH THE CUBE - What's the relation between the flowers and the cube? -->
-    <span>
-      <!-- Flowers are inside the cube  -->
-      <span ng-if="$storage.results[17] == 1">wished for (or in the womb), dependent, young.</span>
-      <!-- Flowers are behind the cube -->
-      <span ng-if="$storage.results[17] == 2">protected by you.</span>
-      <!-- Flowers are far -->
-      <span ng-if="$storage.results[17] == 3">other people's, not a part of your life or living far away.</span>
-      <!-- Flowers are in the foreground -->
-      <span ng-if="$storage.results[17] == 4">very important to you.</span>
-      <!-- Flowers are wild growing -->
-      <span ng-if="$storage.results[17] == 5">not your responsibility, entrusted to life.</span>
-    </span>
-
-    You want to have
-
-    <!-- QUANTITY - How many flowers can you see? -->
-    <span>
-      <!-- Flowers one -->
-      <span ng-if="$storage.results[18] == 1">only one, at least for now.</span>
-      <!-- Flowers few -->
-      <span ng-if="$storage.results[18] == 2">just a few children.</span>
-      <!-- Flowers  many -->
-      <span ng-if="$storage.results[18] == 3">many children, your life's work or other people's.</span>
-    </span>
-
-    and it is
-
-    <!-- CONTEXT - Where are these flowers or where are they coming from? -->
-    <span>
-      <!-- Flowers garden  -->
-      <span ng-if="$storage.results[19] == 1">desired to raise on your own, kept safe and cherished.</span>
-      <!-- Flowers are falling from sky  -->
-      <span ng-if="$storage.results[19] == 2">a blessing, worth the trouble and a work of art.</span>
-      <!-- Flowers are in a vase -->
-      <span ng-if="$storage.results[19] == 3">your pride, cherished, on display.</span>
-    </span>
-
-  </p>
-
-</article>
-
-<article>
-
-  <h2>The Storm</h2>
-
-  <p>
-
-    The storm represents how you deal with difficulties in life. If, whilst seeing storm in your mind’s eye, you think that it will stay there for a long time, you think the same way about your current problems.
-
-    Your type of problems tend to be
-
-    <!-- TYPE - What type of storm do you see? -->
-    <span>
-      <!-- Storm acid rain -->
-      <span ng-if="$storage.results[20] == 1">nagging worries</span>
-      <!-- Storm is electrical -->
-      <span ng-if="$storage.results[20] == 2">shocking and illuminating</span>
-      <!-- Storm is a tornado -->
-      <span ng-if="$storage.results[20] == 3">violent, destructive, acute</span>
-      <!-- Storm is just wind -->
-      <span ng-if="$storage.results[20] == 4">a spiritual crisis, stressful, chaoti.</span>
-      <!-- Storm is sandstorm -->
-      <span ng-if="$storage.results[20] == 5">blinding, irritating, life-changing, financial</span>
-      <!-- Storm is rainstorm -->
-      <span ng-if="$storage.results[20] == 6">an emotional crisis, bringing tears, depressing but necessary for growth</span>
-    </span>
-
-    but even thought they are 
-
-    <!-- RELATIONSHIP WITH THE CUBE - What's the relation between the storm and the cube? -->
-    <span>
-      <!-- Storm above cube -->
-      <span ng-if="$storage.results[21] == 1">present here, now, in your childhood, kept to yourself, affecting you only,</span>
-      <!-- Storm behind cube -->
-      <span ng-if="$storage.results[21] == 2">in your past, ignored by you,</span>
-       <!-- Storm is far -->
-      <span ng-if="$storage.results[21] == 3">minimal, nothing to worry about,</span>
-      <!-- Storm is near -->
-      <span ng-if="$storage.results[21] == 4">significant and affecting you,</span>
-    </span>
-
-    <!-- SIZE - How big is the storm? -->
-    <span>
-      <!-- Storm is big -->
-      <span ng-if="$storage.results[22] == 1">you always try to make a drama out of something or you currently experience big problems in your life.</span>
-      <!-- Storm is small -->
-      <span ng-if="$storage.results[22] == 2">you are a calm and positive person and you don’t like being angry and try to quickly shift your mood if you notice that anger gets activated in you</span>
-    </span>
-
-  </p>
-
-</article>
+<section class="container">
+
+  <md-content class="container-content md-whiteframe-z1">
+
+    <h3>You have created a mysterious image. Five elements, arranged in space in a way that is unique to you. No one else sees what you do. Close your eyes and look at it once more. Now open your eyes and read below to find the secrets of what you created. </h3>
+
+    <article>
+
+      <h2>The Cube</h2>
+
+      <p>
+
+        The first object in the desert, the cube, represents you. How you think about the cube represents how you think about yourself. According to your image and the position of the cube, you are
+
+        <!-- RELATION TO HORIZON - Where is it in relation to the horizon? -->
+        <span>
+          <!-- Cube is above horizon -->
+          <span ng-if="$storage.results[1] == 1">idealistic, intellectual, spiritual and a dreamer.</span>
+          <!-- Cube is below horizon -->
+          <span ng-if="$storage.results[1] == 2">practical, worldly, down-to-earth and sensual.</span>
+          <!-- Cube is bisecting horizon -->
+          <span ng-if="$storage.results[1] == 3">a visionary and practical, spiritual and sensual and making ideas/ideals practical.</span>
+        </span>
+
+        Based on the proximity of the cube, you are
+
+        <!-- PROXIMITY - Is it close or distant? -->
+        <span>
+          <!-- Cube is close -->
+          <span ng-if="$storage.results[2] == 1">comfortable with closeness, a people person and living in the present.</span>
+          <!-- Cube is distant -->
+          <span ng-if="$storage.results[2] == 2">protective of your space and independent.</span>
+        </span>
+
+        <!-- WEIGHT - How heavy is the cube? -->
+        <span>
+          <!-- Cube is floating -->
+          <span ng-if="$storage.results[3] == 1">A floating cube shows that you are a dreamer, optimistic, idealistic, spiritual and living in ideas of fantasy impractical above it all.</span>
+          <!-- Cube is grounded -->
+          <span ng-if="$storage.results[3] == 2">A grounded cube means that you are down to earth.</span>
+        </span>
+
+        <!-- DEPTH - Can you see different sides? -->
+        <span>
+          <!-- Cube is flat -->
+          <span ng-if="$storage.results[4] == 1">If you see the flat side of the cube, you have a shallow personality</span>
+          <!-- Cube is 3D -->
+          <span ng-if="$storage.results[4] == 1">If you see the cube in 3D, you have a deep personality.</span>
+        </span>
+
+        <!-- POSITION - How is this cube positioned? -->
+        <span>
+          <!-- Cube is in the center -->
+          <span ng-if="$storage.results[5] == 1">If the cube is in the center it means that you like the attention and you like to be praised.</span>
+        </span>
+
+        Lastly, the material or color of the cube represents your personality. In general, if the cube is light you are a positive person and the darker it is the more negative you are. However it may not always be so, you should always pay attention to how you feel about the color. If you like the color then you are a likable personality, it the color seems cold to you, you seem distant to people.
+
+        <!-- MATERIAL OR COLOR - What's its material or color? -->
+        <span>
+          <!-- Cube is transparent -->
+          <span ng-if="$storage.results[6] == 1">A <strong>transparent</strong> cube means your are open to others, you don’t hide anything from your friends or family.</span>
+          <!-- Cube is ice melting -->
+          <span ng-if="$storage.results[6] == 2">An <strong>ice melting</strong> cube means your are vulnerable, calm, refreshing, in love.</span>
+          <!-- Cube is polished stone -->
+          <span ng-if="$storage.results[6] == 3">A <strong>stone</strong> cube means your are smooth, refined, ambitious.</span>
+          <!-- Cube is round stone  -->
+          <span ng-if="$storage.results[6] == 4">A <strong>stone</strong> cube means your are natural, honest, awkward, unpolished.</span>
+          <!-- Cube is black -->
+          <span ng-if="$storage.results[6] == 5">A <strong>black</strong> cube represents authority, elegance, sophistication. It can also mean the dark side of the personality.</span>
+          <!-- Cube is white -->
+          <span ng-if="$storage.results[6] == 6">A <strong>white</strong> cube symbolizes innocence, non-judgemental personality, objectivity, lack of strong opinions.</span>
+          <!-- Cube is yellow -->
+          <span ng-if="$storage.results[6] == 7">A <strong>yellow</strong> cube shows that the person loves attention and would do almost anything to get the attention. If this is your color, you may seem too overbearing to some people so they may avoid you. This color also represents playfulness, optimism and energy.</span>
+          <!-- Cube is red -->
+          <span ng-if="$storage.results[6] == 8">A <strong>red</strong> cube represents dominance, power, love and sexual energy. It can also mean that you are an attention seeker.</span>
+          <!-- Cube is green -->
+          <span ng-if="$storage.results[6] == 9">A <strong>green</strong> cube represents compassion, prosperity, money, and vitality.</span>
+          <!-- Cube is blue -->
+          <span ng-if="$storage.results[6] == 10">A <strong>blue</strong> cube represents knowledge, loyalty and calmness.</span>
+          <!-- Cube is purple -->
+          <span ng-if="$storage.results[6] == 11">A <strong>purple</strong> cube represents luxury, wealth, and sophistication.</span>
+          <!-- Cube is brown -->
+          <span ng-if="$storage.results[6] == 12">A <strong>brown</strong> cubeshows stability. Brown is the most common cube color among men.</span>
+        </span>
+
+      </p>
+
+    </article>
+
+    <article>
+
+      <h2>The Ladder</h2>
+
+      <p>
+
+        The ladder represents your friends it seems you
+
+        <!-- Rungs amount - How many rungs does it have? -->
+        <span>
+          <!-- Ladder not many rungs -->
+          <span ng-if="$storage.results[7] == 1">don't have many but the ones you have, are very important.</span>
+          <!-- Ladder few -->
+          <span ng-if="$storage.results[7] == 2">have a good amount of them.</span>
+          <!-- Ladder many rungs -->
+          <span ng-if="$storage.results[7] == 3">have many of them.</span>
+        </span>
+
+        The closer the ladder to the cube, the closer you are with your friends. 
+
+        <!-- DISTANCE FROM THE CUBE - Is it distant or close to the cube? -->
+        <span>
+          <!-- Ladder is far from the cube -->
+          <span ng-if="$storage.results[8] == 2">Your friends are not very close right now. They live far from you or are not important to you. You either mentally or physically like to distance yourself from your friends.</span>
+        </span>
+
+        Based on the way the way the ladder stands, your friends are
+
+        <!-- STANDING - How is this ladder standing? -->
+        <span>
+          <!-- Ladder is free standing -->
+          <span ng-if="$storage.results[9] == 1">independent, don't lean on you and are 'upstanding' to have your respect.</span>
+          <!-- Ladder is lying down -->
+          <span ng-if="$storage.results[9] == 2">relaxed, casual, tired, not much use and downand out.</span>
+          <!-- Ladder is floating -->
+          <span ng-if="$storage.results[9] == 3">dreamers, drifters, philosophers, artists andnot very practical.</span>
+        </span>
+
+        <!-- Relationship with cube - What's the relation between the ladder, the desert and the cube? -->
+        <span>
+          <!-- Ladder is leanning against the cube -->
+          <span ng-if="$storage.results[10] == 1">Some friends are relying on you or expecting you to act according to their wishes.</span>
+          <!-- Ladder is connecting cube to ground -->
+          <span ng-if="$storage.results[10] == 2">They can bring you down to earth, ground you inreality.</span>
+          <!-- Ladder is connecting cube to side -->
+          <span ng-if="$storage.results[10] == 3">You consider your siblings to be your friends. </span>
+          <!-- Ladder is connecting cube to sky -->
+          <span ng-if="$storage.results[10] == 4">They are spiritually evolved and may include God/higher power. They also can help you rise.</span>
+          <!-- Ladder is descending in to the ground -->
+          <span ng-if="$storage.results[10] == 5">They help your self understanding, go deeply into your life and might be undermining you.</span>
+        </span>
+
+        Additionally, your friends are
+
+        <!-- MATERIAL - What's it made of? -->
+        <span>
+          <!-- Ladder is iron  -->
+          <span ng-if="$storage.results[11] == 1">"heavyweights", blunt, uneducated or seriousor somber.</span>
+          <!-- Ladder is rope -->
+          <span ng-if="$storage.results[11] == 2">flexible, have a strong bond with you, reach out to you.</span>
+          <!-- Ladder is old wood -->
+          <span ng-if="$storage.results[11] == 3">old friends, familiar, comfortable and/or older than you.</span>
+          <!-- Ladder is new -->
+          <span ng-if="$storage.results[11] == 4">fairly new and probably cultured, educated, wealthy and/or snobbish.</span>
+          <!-- Ladder is steel -->
+          <span ng-if="$storage.results[11] == 5">reliable, indestructible, practical and/or unadorned.</span>
+        </span>
+
+        And most importantly, some of your friends
+
+        <!-- MATERIAL OR COLOR - What's its material or color? -->
+        <span>
+          <!-- Ladder is transparent -->
+          <span ng-if="$storage.results[12] == 1">are open and honest with you, they don’t hide anything from your you or their family.</span>
+          <!-- Ladder is ice melting -->
+          <span ng-if="$storage.results[12] == 2">are vulnerable, calm, refreshing, in love.</span>
+          <!-- Ladder is polished stone -->
+          <span ng-if="$storage.results[12] == 3">are smooth, refined, ambitious.</span>
+          <!-- Ladder is round stone  -->
+          <span ng-if="$storage.results[12] == 4">are natural, honest, awkward, unpolished.</span>
+          <!-- Ladder is black -->
+          <span ng-if="$storage.results[12] == 5">represent authority, elegance, sophistication. It can also mean the dark side of the personality.</span>
+          <!-- Ladder is white -->
+          <span ng-if="$storage.results[12] == 6">symbolize innocence, non-judgemental personality, objectivity, lack of strong opinions.</span>
+          <!-- Ladder is yellow -->
+          <span ng-if="$storage.results[12] == 7">love attention and would do almost anything to get the attention. They may seem too overbearing to some people so they may avoid you. They also represent playfulness, optimism and energy.</span>
+          <!-- Ladder is red -->
+          <span ng-if="$storage.results[12] == 8">represent dominance, power, love and sexual energy. It can also mean that they are an attention seeker.</span>
+          <!-- Ladder is green -->
+          <span ng-if="$storage.results[12] == 9">represent compassion, prosperity, money, and vitality.</span>
+          <!-- Ladder is blue -->
+          <span ng-if="$storage.results[12] == 10">represent knowledge, loyalty and calmness.</span>
+          <!-- Ladder is purple -->
+          <span ng-if="$storage.results[12] == 11">represent luxury, wealth, and sophistication.</span>
+          <!-- Ladder is brown -->
+          <span ng-if="$storage.results[12] == 12">are very satable.</span>
+        </span>
+
+        Nice ladder!
+
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <h2>The Horse</h2>
+
+      <p>
+
+        The horse represents your ideal partner and how you behave in relationships. The distance between the cube and the horse shows how close or distant you are in relationships. How the horse behaves also shows what kind of partner you would like to have. The look of a horse also indicate the physical features of your ideal partner. The better the appearance of the horse, the better looking partner you would like to have.
+
+        At times, your ideal partner could be
+
+        <!-- COLOR - What's the horse's color? -->
+        <span>
+          <!-- Horse is White -->
+          <span ng-if="$storage.results[13] == 1">idealized, idealistic, your dream, of high principles, good</span>
+          <!-- Horse is Black -->
+          <span ng-if="$storage.results[13] == 2">mysterious, romantic, powerful, moody, a good lover</span>
+          <!-- Horse is Brown -->
+          <span ng-if="$storage.results[13] == 3">warm, earthy, sensual, unpretentious</span>
+        </span>
+
+        but they could also be
+
+        <!-- TYPE - What type of horse is this? -->
+        <span>
+          <!-- Horse is Arabian -->
+          <span ng-if="$storage.results[14] == 1">high-strung, aristocrat, elegant, nervous and proud.</span>
+          <!-- Horse is Clydesdale/Carthorse -->
+          <span ng-if="$storage.results[14] == 2">a real workhorse, big, heavy and physically strong.</span>
+          <!-- Horse is Palomino -->
+          <span ng-if="$storage.results[14] == 3">your pal, good as gold, blond.</span>
+          <!-- Horse is Mare -->
+          <span ng-if="$storage.results[14] == 4">nurturing, gentle, patient, enduring and temperamental.</span>
+          <!-- Horse is a Pony -->
+          <span ng-if="$storage.results[14] == 5">small, cute, probably child-like, and affectionate.</span>
+          <!-- Horse is Stallion-->
+          <span ng-if="$storage.results[14] == 6">old, assertive, adventurous, dominant and proud.</span>
+          <!-- Horse is Unicorn -->
+          <span ng-if="$storage.results[14] == 7">enchanting, shy, pure, innocent and magical.</span>
+        </span>
+        
+        They're also
+
+        <!-- RALATIONSHIP WITH THE CUBE - What's the relation between the horse and the cube? -->
+        <span>
+          <!-- Horse is close -->
+          <span ng-if="$storage.results[15] == 1">definitely close to you, loyal, committed.</span>
+          <!-- Horse is distant -->
+          <span ng-if="$storage.results[15] == 2">indifferent, very independent, with a low priority for you.</span>
+        </span>
+
+        Finally, 
+
+        <!-- ACTION - What is the horse doing? -->
+        <span>
+          <!-- Horse is flying -->
+          <span ng-if="$storage.results[16] == 1">your partner feels like a new love, idealized, spiritual, magical, taking you higher, taking you away.</span>
+          <!-- Horse is wild -->
+          <span ng-if="$storage.results[16] == 2">you give freedom to your partnery.</span>
+          <!-- Horse is tied -->
+          <span ng-if="$storage.results[16] == 3">you always want to know where your partner is and what he/she is doing.</span>
+          <!-- Horse is running -->
+          <span ng-if="$storage.results[16] == 4">you want to have a partner that would like to travel, would be full of energy and would always be involved in something.</span>
+          <!-- Horse is still -->
+          <span ng-if="$storage.results[16] == 5">you want to have a partner that likes to be at home and rarely travels.</span>
+        </span>
+
+      </p>
+
+    </article>
+
+    <article>
+
+      <h2>The Flowers</h2>
+
+      <p>
+
+        The flowers represents your children. In your case they are
+
+        <!-- RELATIONSHIP WITH THE CUBE - What's the relation between the flowers and the cube? -->
+        <span>
+          <!-- Flowers are inside the cube  -->
+          <span ng-if="$storage.results[17] == 1">wished for (or in the womb), dependent, young.</span>
+          <!-- Flowers are behind the cube -->
+          <span ng-if="$storage.results[17] == 2">protected by you.</span>
+          <!-- Flowers are far -->
+          <span ng-if="$storage.results[17] == 3">other people's, not a part of your life or living far away.</span>
+          <!-- Flowers are in the foreground -->
+          <span ng-if="$storage.results[17] == 4">very important to you.</span>
+          <!-- Flowers are wild growing -->
+          <span ng-if="$storage.results[17] == 5">not your responsibility, entrusted to life.</span>
+        </span>
+
+        You want to have
+
+        <!-- QUANTITY - How many flowers can you see? -->
+        <span>
+          <!-- Flowers one -->
+          <span ng-if="$storage.results[18] == 1">only one, at least for now.</span>
+          <!-- Flowers few -->
+          <span ng-if="$storage.results[18] == 2">just a few children.</span>
+          <!-- Flowers  many -->
+          <span ng-if="$storage.results[18] == 3">many children, your life's work or other people's.</span>
+        </span>
+
+        and it is
+
+        <!-- CONTEXT - Where are these flowers or where are they coming from? -->
+        <span>
+          <!-- Flowers garden  -->
+          <span ng-if="$storage.results[19] == 1">desired to raise on your own, kept safe and cherished.</span>
+          <!-- Flowers are falling from sky  -->
+          <span ng-if="$storage.results[19] == 2">a blessing, worth the trouble and a work of art.</span>
+          <!-- Flowers are in a vase -->
+          <span ng-if="$storage.results[19] == 3">your pride, cherished, on display.</span>
+        </span>
+
+      </p>
+
+    </article>
+
+    <article>
+
+      <h2>The Storm</h2>
+
+      <p>
+
+        The storm represents how you deal with difficulties in life. If, whilst seeing storm in your mind’s eye, you think that it will stay there for a long time, you think the same way about your current problems.
+
+        Your type of problems tend to be
+
+        <!-- TYPE - What type of storm do you see? -->
+        <span>
+          <!-- Storm acid rain -->
+          <span ng-if="$storage.results[20] == 1">nagging worries</span>
+          <!-- Storm is electrical -->
+          <span ng-if="$storage.results[20] == 2">shocking and illuminating</span>
+          <!-- Storm is a tornado -->
+          <span ng-if="$storage.results[20] == 3">violent, destructive, acute</span>
+          <!-- Storm is just wind -->
+          <span ng-if="$storage.results[20] == 4">a spiritual crisis, stressful, chaoti.</span>
+          <!-- Storm is sandstorm -->
+          <span ng-if="$storage.results[20] == 5">blinding, irritating, life-changing, financial</span>
+          <!-- Storm is rainstorm -->
+          <span ng-if="$storage.results[20] == 6">an emotional crisis, bringing tears, depressing but necessary for growth</span>
+        </span>
+
+        but even thought they are 
+
+        <!-- RELATIONSHIP WITH THE CUBE - What's the relation between the storm and the cube? -->
+        <span>
+          <!-- Storm above cube -->
+          <span ng-if="$storage.results[21] == 1">present here, now, in your childhood, kept to yourself, affecting you only,</span>
+          <!-- Storm behind cube -->
+          <span ng-if="$storage.results[21] == 2">in your past, ignored by you,</span>
+           <!-- Storm is far -->
+          <span ng-if="$storage.results[21] == 3">minimal, nothing to worry about,</span>
+          <!-- Storm is near -->
+          <span ng-if="$storage.results[21] == 4">significant and affecting you,</span>
+        </span>
+
+        <!-- SIZE - How big is the storm? -->
+        <span>
+          <!-- Storm is big -->
+          <span ng-if="$storage.results[22] == 1">you always try to make a drama out of something or you currently experience big problems in your life.</span>
+          <!-- Storm is small -->
+          <span ng-if="$storage.results[22] == 2">you are a calm and positive person and you don’t like being angry and try to quickly shift your mood if you notice that anger gets activated in you</span>
+        </span>
+
+      </p>
+
+    </article>
+
+  </md-content>
+
+</section>

@@ -1,8 +1,13 @@
 
+body, html {
+  background: none;
+  height: auto;
+  min-height: 100%;
+}
+
 body { 
-  margin: 0; 
-  background-image: url('/img/desert/desert5.jpg');
-  background-size: cover;
+  margin: 0;
+  background-color: #ABAE9B;
 }
 
 canvas { 
@@ -15,22 +20,30 @@ md-toolbar.md-default-theme {
   color: #fff;
 }
 
-md-radio-button.md-default-theme.md-checked .md-off, md-switch.md-default-theme .md-switch-thumb.md-checked .md-off {
-  border-color: rgba(102,187,106,.87);
-}
-
-md-radio-button.md-default-theme .md-on, md-switch.md-default-theme .md-switch-thumb .md-on {
-  background-color: rgba(102,187,106,.87);
-}
-
 md-radio-group {
   border: none;
 }
 
-md-content.md-default-theme {
-  background: none;
-}
-
 md-sidenav {
   background-color: rgba(255,255,255,0.6);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-content {
+  padding: 30px 40px;
+  margin: 40px 0;
+}
+
+hr {
+  border-style: solid;
+  border-bottom: 0;
+  border-color: rgba(0,0,0,0.1)
+}
+
+.text-center {
+  text-align: center;
 }
