@@ -1,5 +1,5 @@
 'use strict'
 
-App.controller('restulsCtrl', function ($scope) {
+App.controller('resultsCtrl', function ($scope) {
 
 });
