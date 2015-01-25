@@ -1,30 +1,29 @@
 'use strict'
 
-App.controller('gameCtrl', function ($scope, $rootScope, $location, $routeParams, $filter, kokoConst) {
+App.controller('gameCtrl', function ($scope, $rootScope, $location, $routeParams, $sessionStorage, kokoConst) {
 
-  $scope.questions = angular.copy(kokoConst.questions);
+  $scope.$storage = $sessionStorage.$default({
+    questions: kokoConst.questions
+  });
+
+  angular.forEach($scope.$storage.questions, function (question) {
+    question.options = angular.copy(kokoConst.answerTypes[question.answerType]);
+  });
+
+  $scope.activeId = parseInt($routeParams.id);
+
+  $scope.$storage.question = $scope.$storage.questions[$routeParams.id-1]
 
   $scope.nextQuestion = function () {
-    $location.path('game/' + ($scope.currentStep + 1));
+    $location.path('game/' + ($scope.activeId + 1));
   };
 
   $scope.prevQuestion = function () {
-    $location.path('game/' + ($scope.currentStep - 1));
+    $location.path('game/' + ($scope.activeId - 1));
   };
 
   $scope.goToResults = function () {
     $location.path('results');
   };
-
-  $scope.updateStep = function () {
-    $scope.currentStep = parseInt($routeParams.id);
-    $scope.question = $filter('filter')($scope.questions, { id: $routeParams.id })[0];
-  };
-
-  $scope.updateStep();
-
-  $rootScope.$on('$routeChangeSuccess', function () {
-    $scope.updateStep();
-  });
   
 });
