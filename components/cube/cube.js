@@ -107,20 +107,25 @@ angular.module('Cube', [])
         });
 
         scope.$watch('weight', function (weight) {
-          /*switch (weight) {
+          switch (weight) {
             case 1: 
               cube.position.y = 10;
               break;
             case 2: 
               cube.position.y = 0;
               break;
-          }*/
+          }
         });
 
-        scope.$watch('depth', function (valign) {
-          // switch (valign) {
-          //   case 1: cube.material = 
-          // }
+        scope.$watch('depth', function (depth) {
+          switch (depth) {
+            case 1: // Flat
+              cube.material = new THREE.MeshBasicMaterial({ color: 'gray' });
+              break;
+            case 2: // 3D
+              cube.material = new THREE.MeshLambertMaterial({ color: 'lightgray' });
+              break;
+          }
         });
 
         scope.$watch('positionX', function (position) {
