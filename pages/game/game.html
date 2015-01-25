@@ -18,8 +18,9 @@
   <section flex>
     <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="true">
       <md-content class="md-padding">
-        <h2>{{ $storage.question.heading }}</h2>
-        <p>{{ $storage.question.question }}</p>
+        <h2 class="text-center">{{ $storage.question.heading }}</h2>
+        <p class="text-center">{{ $storage.question.question }}</p>
+        <br>
         <md-radio-group ng-model="$storage.question.answer">
           <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
         </md-radio-group>
