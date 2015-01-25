@@ -11,7 +11,7 @@ body, html {
 
 body { 
   margin: 0;
-  background-color: #222222;
+  background-color: #333333;
 }
 
 canvas { 
@@ -76,14 +76,19 @@ md-content .md-button.md-default-theme {
 }
 
 .md-subheader.md-default-theme.md-primary {
-  background-color: #444444;
+  background-color: #333333;
   color: #ffffff;
   margin-right: 0px;
   font-size: 20px;
-  font-weight: bold;
+  padding: 26px;
 }
 
 .md-button.md-default-theme.md-fab.md-primary, .md-button.md-default-theme.md-raised.md-primary {
   padding: 14px 40px;
   background-color: rgba(102,187,106,.87);
+}
+
+.md-button.md-default-theme.md-warn {
+  background-color: #ef5350;
+  color: white;
 }
