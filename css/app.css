@@ -19,6 +19,12 @@ canvas {
   height: 100%;
 }
 
+a,
+a:hover,
+a:active {
+  color: #ffffff;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -41,6 +47,10 @@ hr {
 
 .text-center {
   text-align: center;
+}
+
+.text-sm {
+  font-size: 12px;
 }
 
 .pull-left {
