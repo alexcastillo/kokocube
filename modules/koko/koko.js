@@ -78,7 +78,7 @@ Koko.constant('kokoConst', {
           value: 1
         },
         {
-          label: 'To a side',
+          label: 'In a corner',
           value: 2
         }
       ]
@@ -194,7 +194,7 @@ Koko.constant('kokoConst', {
     {
       id: 10,
       heading: 'The Ladder',
-      question: 'What\'s the relation between the ladder, the desert and the cube?',
+      question: 'What is the relation between the ladder, the desert and the cube?',
       options: [
         {
           label: 'Against the cube',
@@ -221,7 +221,7 @@ Koko.constant('kokoConst', {
     {
       id: 11,
       heading: 'The Ladder',
-      question: 'What\'s it made of?',
+      question: 'What is it made of?',
       options: [
         {
           label: 'Iron',
@@ -248,7 +248,7 @@ Koko.constant('kokoConst', {
     {
       id: 12,
       heading: 'The Ladder',
-      question: 'What\'s its material or color?',
+      question: 'What material or color is the ladder?',
       options: [
         {
           label: 'Transparent',
@@ -303,7 +303,7 @@ Koko.constant('kokoConst', {
     {
       id: 13,
       heading: 'The Horse',
-      question: 'What\'s the horse\'s color?',
+      question: 'What color is the horse?',
       options: [
         {
           label: 'White',
@@ -322,7 +322,7 @@ Koko.constant('kokoConst', {
     {
       id: 14,
       heading: 'The Horse',
-      question: 'What type of horse is this?',
+      question: 'What type of horse is it?',
       options: [
         {
           label: 'Arabian',
@@ -357,7 +357,7 @@ Koko.constant('kokoConst', {
     {
       id: 15,
       heading: 'The Horse',
-      question: 'What\'s the relation between the horse and the cube?',
+      question: 'What is the relation between the horse and the cube?',
       options: [
         {
           label: 'Close',
@@ -399,7 +399,7 @@ Koko.constant('kokoConst', {
     {
       id: 17,
       heading: 'The Flowers',
-      question: 'What\'s the relation between the flowers and the cube?',
+      question: 'What is the relation between the flowers and the cube?',
       options: [
         {
           label: 'Inside the cube',
@@ -495,7 +495,7 @@ Koko.constant('kokoConst', {
     {
       id: 21,
       heading: 'The Storm',
-      question: 'What\'s the relation between the storm and the cube?',
+      question: 'What is the relation between the storm and the cube?',
       options: [
         {
           label: 'Above the cube',
