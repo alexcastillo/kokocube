@@ -1,4 +1,10 @@
 
+<cube></cube>
+<ladder></ladder>
+<horse></horse>
+<flowers></flowers>
+<storm></storm>
+
 <div layout="row" layout-sm="column" layout-fill layout-margin>
 
   <section flex>
@@ -9,23 +15,13 @@
         <md-radio-group ng-model="$storage.question.answer">
           <md-radio-button ng-repeat="option in $storage.question.options" ng-value="option.value" aria-label="{{ option.label }}">{{ option.label }}</md-radio-button>
         </md-radio-group>
-        <nav>
+        <nav class="game-nav">
           <md-button class="" ng-click="prevQuestion()" ng-disabled="activeId == 1">Previous</md-button>
           <md-button class="" ng-click="nextQuestion()" ng-hide="activeId == $storage.questions.length">Next</md-button>
           <md-button class="md-primary" ng-click="goToResults()" ng-show="activeId == $storage.questions.length">Complete</md-button>
         </nav>
       </md-card-content>
     </md-sidenav>
-  </section>
-
-  <section flex>
-    <div>
-      <cube></cube>
-      <ladder></ladder>
-      <horse></horse>
-      <flowers></flowers>
-      <storm></storm>
-    </div>
   </section>
 
 </md-content>
