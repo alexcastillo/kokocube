@@ -125,12 +125,16 @@ Koko.constant('kokoConst', {
           value: 9
         },
         {
-          label: 'Purple',
+          label: 'Blue',
           value: 10
         },
         {
-          label: 'Brown',
+          label: 'Purple',
           value: 11
+        },
+        {
+          label: 'Brown',
+          value: 12
         }
       ]
     },
@@ -283,12 +287,16 @@ Koko.constant('kokoConst', {
           value: 9
         },
         {
-          label: 'Purple',
+          label: 'Blue',
           value: 10
         },
         {
-          label: 'Brown',
+          label: 'Purple',
           value: 11
+        },
+        {
+          label: 'Brown',
+          value: 12
         }
       ]
     },
@@ -459,7 +467,7 @@ Koko.constant('kokoConst', {
       question: 'What type of storm do you see?',
       options: [
         {
-          label: 'Rain',
+          label: 'Acid Rain',
           value: 1
         },
         {
