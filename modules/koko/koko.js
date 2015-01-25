@@ -97,7 +97,7 @@ Koko.constant('kokoConst', {
           value: 2
         },
         {
-          label: 'Ploshed Stone',
+          label: 'Polished Stone',
           value: 3
         },
         {
@@ -259,7 +259,7 @@ Koko.constant('kokoConst', {
           value: 2
         },
         {
-          label: 'Ploshed Stone',
+          label: 'Polished Stone',
           value: 3
         },
         {
