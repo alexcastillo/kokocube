@@ -313,6 +313,16 @@ Koko.constant('kokoConst', {
         label: 'No',
         value: 2
       }
+    ],
+    stormFuture: [
+      {
+        label: 'Passing By',
+        value: 1
+      },
+      {
+        label: 'Staying',
+        value: 2
+      }
     ]
   },
   questions: [
@@ -483,7 +493,7 @@ Koko.constant('kokoConst', {
       question: 'Is it passing by or staying?',
       description: '',
       answer: null,
-      answerType: 'yesOrNo'
+      answerType: 'stormFuture'
     }
   ]
 });
